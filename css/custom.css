@@ -1,5 +1,9 @@
+.video-hero .row {
+	padding-top: 110px;
+}
+
 .promo-intro {
-	min-height: 380px;
+	min-height: 340px;
 	width: 80%;
 	background-color: #fff;
 	margin: 0 auto;
@@ -32,4 +36,14 @@
 
 .emphasis {
 	color: #F47983;
+}
+
+.press {
+	width: 250px;
+}
+
+#press-section {
+	padding-top: 60px;
+	padding-bottom: 20px;
+	text-align: center;
 }

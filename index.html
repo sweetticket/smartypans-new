@@ -21,6 +21,8 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<!-- Custom styling -->
 		<link href="css/style.css" rel="stylesheet">
+		<!-- Scrolling Nav -->
+		<link href="css/scrolling-nav.css" rel="stylesheet">
 		<!-- Jenny's styling -->
 		<link href="css/custom.css" rel="stylesheet">
 		<!-- Google fonts -->
@@ -37,7 +39,50 @@
 			<script src="js/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	<body>
+
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<!-- Navigation -->
+	    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	        <div class="container">
+	            <div class="navbar-header page-scroll">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand page-scroll" href="#page-top"></a>
+	            </div>
+
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse navbar-ex1-collapse">
+	            	
+	                <ul class="nav navbar-nav">
+	                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+	                    <li class="hidden">
+	                        <a class="page-scroll" href="#page-top"></a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#press-section"><span class="navlink-text">Press</span></a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#about-section"><span class="navlink-text">About</span></a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#promo-section"><span class="navlink-text">Special Offers</span></a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#subscribe-section"><span class="navlink-text">Subscribe</span></a>
+	                    </li>
+	                </ul>
+		            <button data-ct-checkout="smartypans.smartypans" class="btn nav-preorder">
+		            	Preorder Now
+		            </button>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container -->
+	    </nav>
 	<!-- Start preloader -->
 		<div class="preloader">
 			<ul class="dots">
@@ -59,27 +104,6 @@
 			</ul>
 		</div>
 	<!-- End preloader -->
-	<!-- Start intro / Image version -->
-<!--		<section class="hero" data-start="background-position: 50% -70px;" data-100p="background-position: 50% 0px;">
-			<div class="section-overlay">
-				<div class="float-content">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-8 col-sm-offset-2 text-center">
-								<img src="http://placehold.it/150x45/ffffff/000000" class="img-responsive" alt=""><br><br>
-								<h1 class="light wow fadeInDown">Your app has never been cooler</h1>
-								<a href="#features" class="btn">Try for free</a>
-								<a href="http://themeforest.net/item/superawesome-retina-bootstrap-3-app-landing-page/3597882?ref=awerest" class="btn btn-ghost">Get template</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="sticky-bottom text-center wow fadeInUp">
-					<img src="http://placehold.it/1140x350/ffffff/000000" alt="" class="img-responsive" data-start="opacity: 1; margin-bottom: 0%;" data-80p="opacity: 0; margin-bottom: -15%;">
-				</div>
-			</div>
-		</section> -->
-	<!-- End intro / Image version -->
 	<!-- Start intro / Video version -->
 		<section class="video-hero">
 			<div class="section-overlay">
@@ -87,10 +111,8 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-8 col-sm-offset-2 text-center">
-								<img src="img/logo.png" class="logo-intro img-responsive" alt=""><br><br>
 								<h1 class="light wow fadeInDown">Empowering You to Explore</h1>
 								<a href="#features" class="btn">Preorder Now</a>
-								<!-- <a href="http://themeforest.net/item/superawesome-retina-bootstrap-3-app-landing-page/3597882?ref=awerest" class="btn btn-ghost">Get template</a> -->
 							</div>
 						</div>
 					</div>
@@ -99,40 +121,36 @@
 					<div class="promo-intro" data-start="opacity: 1; margin-bottom: 0%;" data-80p="opacity: 0; margin-bottom: -15%;">
 						<h2><i>Perfect Timing! <strong>Save $181</strong></i></h2>
 						<p>For a limited time, get the SmartyPan for <strong class="emphasis">$169 (original price $350)</strong>, along with a bunch of extra goodies from us!</p>
-						<a href="#promo">
+						<a href="#promo-section">
 							<span class="see-details">See Details</span><br>
 							<i class="fa fa-chevron-down to-promo-link"></i>
 						</a>
 					</div>
-					<!-- <img src="http://placehold.it/1140x350/ffffff/000000" alt="" class="img-responsive" data-start="opacity: 1; margin-bottom: 0%;" data-80p="opacity: 0; margin-bottom: -15%;"> -->
+					
 				</div>
 			</div>
 		</section>
 	<!-- End intro / Video version -->
 	<!-- Start testimonials -->
-		<section class="light-bg">
+		<section class="light-bg" id="press-section">
 			<div class="container">
 				<div class="row">
-	<!-- Testimonial 01 -->
-					<div class="col-lg-4 divide-sm">
-						<img src="http://placehold.it/150x50/ffffff/000000" alt="">
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<img class="press img-responsive" src="img/bbc.png" alt="">
 						<div class="divide-xs"></div>
-						<p>I don't care that they stole my idea... I care that they don't have any of their own.</p>
-						<p><small>Nikola Tesla, Serbian inventor</small></p>
 					</div>
-	<!-- Testimonial 02 -->
-					<div class="col-lg-4 divide-sm">
-						<img src="http://placehold.it/150x50/ffffff/000000" alt="">
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<img class="press img-responsive" src="img/ubergizmo.png" alt="">
 						<div class="divide-xs"></div>
-						<p>There are no secrets to success. It is the result of preparation, hard work, and learning from failure.</p>
-						<p><small>Colin Powell, Statesman</small></p>
+						<img class="press img-responsive" src="img/elcomercio.png" alt="">
 					</div>
-	<!-- Testimonial 03 -->
-					<div class="col-lg-4 divide-sm">
-						<img src="http://placehold.it/150x50/ffffff/000000" alt="">
+
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<img class="press img-responsive" src="img/dailymail.png" alt="">
 						<div class="divide-xs"></div>
-						<p>If there is anything that a man can do well, I say let him do it. Give him a chance.</p>
-						<p><small>Abraham Lincoln, President</small></p>
+						<img class="press img-responsive" src="img/mobile.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -140,7 +158,7 @@
 	<!-- End testimonials -->
 	<!-- Start features -->
 	<!-- Features 01 / Image left, text right -->
-		<section class="white-bg" id="features">
+		<section class="white-bg" id="about-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-sm-offset-6">
@@ -170,7 +188,7 @@
 			</div>
 		</section>
 	<!-- Features 03 / Image left, text right -->
-		<section class="white-bg" id="promo">
+		<section class="white-bg" id="promo-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6 col-sm-offset-6">
@@ -240,41 +258,9 @@
 			</div>
 		</section>
 	<!-- End call-to-action -->
-	<!-- Start pricing -->
-		<section>
-			<div class="container">
-				<div class="divide-xs"></div>
-				<div class="row">
-	<!-- Pricing item 01 -->
-					<div class="col-sm-4 divide-sm">
-						<div class="pricing-table light-bg text-center">
-							<h3>Small business</h3>
-							<h1><sup><sub><sub>$</sub></sub></sup> 11</h1>
-							<p>/ year per user</p>
-						</div>
-					</div>
-	<!-- Pricing item 02 -->
-					<div class="col-sm-4 divide-sm">
-						<div class="pricing-table light-bg text-center">
-							<h3>Agency</h3>
-							<h1><sub><sup>$</sup></sub> 18</h1>
-							<p>/ year per team</p>
-						</div>
-					</div>
-	<!-- Pricing item 03 -->
-					<div class="col-sm-4 divide-sm">
-						<div class="pricing-table light-bg text-center">
-							<h3>Enterprise</h3>
-							<h1><sup><sub><sub>$</sub></sub></sup> 42</h1>
-							<p>/ year for unlimited</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	<!-- End pricing -->
+
 	<!-- Start contact -->
-		<section>
+		<section id="subscribe-section">
 			<div class="container">
 				<div class="divide-xs"></div>
 				<hr>
@@ -358,6 +344,10 @@
 		<script src="js/jquery.flowuplabels.js"></script>
 	<!-- Custom scripts and triggers -->
 		<script src="js/custom.js"></script>
+	<!-- Easing -->
+		<script src="js/jquery.easing.min.js"></script>
+	<!-- Scrolling Nav -->
+		<script src="js/scrolling-nav.js"></script>
 	<!-- Google analytics -->
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
