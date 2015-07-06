@@ -1,0 +1,35 @@
+.promo-intro {
+	min-height: 380px;
+	width: 80%;
+	background-color: #fff;
+	margin: 0 auto;
+	padding-top: 45px;
+}
+
+.promo-intro h2 {
+	color: #F47983;
+}
+
+.promo-intro p {
+	font-size: 18px;
+	width: 65%;
+	margin: 25px auto;
+	color: #4b5569;
+}
+
+.logo-intro {
+	width: 150px;
+	height: auto;
+}
+
+.to-promo-link {
+	font-size: 30px;
+}
+
+.see-details {
+	font-size: 18px;
+}
+
+.emphasis {
+	color: #F47983;
+}
