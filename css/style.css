@@ -315,7 +315,8 @@ hr {
 /* Call-to-action section */
 
 .cta {
-	background-image: url("http://placehold.it/1400x800/ffffff/000000");
+	/*background-image: url("http://placehold.it/1400x800/ffffff/000000");*/
+	background-image: url("../img/tech.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	-webkit-background-size: cover;
