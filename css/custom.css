@@ -51,3 +51,7 @@
 	padding-bottom: 60px;
 	text-align: center;
 }
+
+#signup-section h1, #signup-section h3 {
+	padding-left: 25px;
+}
